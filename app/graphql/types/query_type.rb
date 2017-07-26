@@ -8,8 +8,4 @@ Types::QueryType = GraphQL::ObjectType.define do
       User.find_by(email: args['email'])
     }
   end
-
-  field :article do
-    type Types::ArticleType
-  end
 end
